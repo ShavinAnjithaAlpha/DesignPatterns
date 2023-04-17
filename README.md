@@ -8,7 +8,7 @@ Design Patterns with Java
 
 ### Definition
 
-Class has only one instance, and provide global access to it.
+*Class has only one instance, and provide global access to it.*
 
 Once you created instance of this clas, next time onward you use the existing object. This approach helps us to avoid creating unnecessary objects of a class in a centralized system and that will help
 us to easily maintain and extend the system.
@@ -58,3 +58,21 @@ class will create after we invoke the get method**
 
 *Use the ***synchronized*** keyword in ***if*** statement rather than for method head - this will make us
 avoid overhead of ***synchronized*** keyword by use it only when the creation of the object.
+
+## Prototype Pattern
+
+### Definition
+
+*Specify the kinds of object to be created using prototypical instance, and create new objects by copying this 
+prototypes*
+
+In general, creating a new objects from scratch is a costly and time waste operations.
+By using prototypes we can minimize the these cost through copying or cloning existing objects.
+
+### Illustration
+
+Here we implement the prototype pattern by using soldiers.
+
+* Implement the Soldier basic prototype as abstract class
+* Create Sniper and Ghost concrete prototype classes that have implemented the *clone()* method defined in the basic prototype
+* Change their attributes based on their type
