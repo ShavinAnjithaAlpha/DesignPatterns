@@ -4,7 +4,7 @@ Design Patterns with Java
 
 ###### There are several types of design patterns. In the following text we will look at each design patterns and their characteristics.
 
-## Singleton Pattern
+## 1. Singleton Pattern
 
 ### Definition
 
@@ -59,7 +59,7 @@ class will create after we invoke the get method**
 *Use the ***synchronized*** keyword in ***if*** statement rather than for method head - this will make us
 avoid overhead of ***synchronized*** keyword by use it only when the creation of the object.
 
-## Prototype Pattern
+## 2. Prototype Pattern
 
 ### Definition
 
