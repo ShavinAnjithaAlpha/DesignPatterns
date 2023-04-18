@@ -76,3 +76,25 @@ Here we implement the prototype pattern by using soldiers.
 * Implement the Soldier basic prototype as abstract class
 * Create Sniper and Ghost concrete prototype classes that have implemented the *clone()* method defined in the basic prototype
 * Change their attributes based on their type
+
+
+## 3. Builder Pattern
+
+### Definition
+
+Separate the construction of a complex object from its representation. In this way we can use the 
+same construction process for different representations.
+
+This pattern useful for creating complex objects that have multiple parts. creation process should be 
+independent of these parts. The construction process does not care about how these parts are assembled.
+By using this pattern, you can hide the internal complex construction process by promoting the encapsulation.
+
+### Illustration
+
+Here we use following steps to implement the Builder Pattern
+
+* Create *Director* class for construction process-this class take care of the construction of different representation of objects, and this class does not care about how parts are assembled.
+* Create *Builder* interface to specify the construction steps for object
+* Create *Base Concrete* class for represent the complex object-that is the objet which we needed to build.
+* Create *Representation* class which implement the *Builder* interface, to specify how each representation would be constructed.
+
