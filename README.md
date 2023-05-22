@@ -98,3 +98,27 @@ Here we use following steps to implement the Builder Pattern
 * Create *Base Concrete* class for represent the complex object-that is the objet which we needed to build.
 * Create *Representation* class which implement the *Builder* interface, to specify how each representation would be constructed.
 
+## 4. Abstract Factory Pattern
+
+### Definition
+
+Provide an interface for creating families of related or dependent objects without 
+specifying their concrete classes.
+
+This pattern provides a way to encapsulate a group of individual factories that have a
+common theme. Here a class does not create the objects directly; instead, it delegates the
+task to a factory object.
+This pattern separates the details of implementation of a set of objects from their general usage and relies on object composition, 
+as object creation is implemented in methods exposed in the factory interface.
+
+The pattern describes how to solve such problems:
+
+    * Encapsulate object creation in a separate (factory) object by defining and implementing an interface for creating objects.
+    * Delegate object creation to a factory object instead of creating objects directly.
+
+### Illustration
+
+* Create *Player Interfaces*  for specify the basic functionality of each kind of players
+* Create *Concrete Player* classes with implementing the appropriate player interfaces
+* Create *Factory Interface* for specify the creation of each player types
+* Create *Concrete Factory Classes* with implementing the factory interface to create each objects 
